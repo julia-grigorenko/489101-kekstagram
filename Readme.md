@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм» [![Build status][travis-image]][travis-url]
 
 * Студент: [Юлия Григоренко](https://up.htmlacademy.ru/javascript/13/user/489101).
-* Наставник: [`Михаил Баранов`](https://htmlacademy.ru/profile/h4).
+* Наставник: [Михаил Баранов](https://htmlacademy.ru/profile/h4).
 
 ---
 
