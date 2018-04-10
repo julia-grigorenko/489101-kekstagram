@@ -71,6 +71,7 @@ var getPhotos = function (photosCounts, photosComments, photosDescriptions) {
     photos[i]['commentsQty'] = photos[i]['comments'].length;
     photos[i]['description'] = getDescription(photosDescriptions);
   }
+
   return photos;
 
   //
@@ -79,7 +80,7 @@ var getPhotos = function (photosCounts, photosComments, photosDescriptions) {
   //     likes: getRandomInt(15,200),
   //    comments: comments.push(getComment(photosComments)),
   //     description: getDescription(photosDescriptions)
-  //  }
+  //  };
   //   photos.push(photo);
   //  пыталась сделать по аналогии с комментарием на задание по code and magic,
   //  не  получается. наверное, логика проверки url на дублирование должна быть другой...
@@ -102,10 +103,12 @@ var createBigPicture = function (item) {
   var commentsQty = bigPicture.querySelector('.comments-count');
   var socialComments = bigPicture.querySelector('.social__comments');
   var number = getRandomInt(1, 6);
+  var description = bigPicture.querySelector('.social__caption');
 
   bigPictureImg.setAttribute('src', item.url);
   likes.textContent = item.likes;
   commentsQty.textContent = item.commentsQty;
+  description.textContent = item.description;
 
   var newElement = document.createElement('li');
   newElement.className = 'social__comment social__comment--text';
